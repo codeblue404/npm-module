@@ -1,0 +1,26 @@
+{
+  "name": "npm-module",
+  "version": "1.0.0",
+  "description": "Setup a basic project to deploy a npm module. Typescript used for coding.",
+  "main": "lib/index",
+  "types": "lib/index",
+  "scripts": {
+    "test": "./node_nodules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royNiladri/npm-module.git"
+  },
+  "author": "Niladri Roy <callniladri.pro@gmail.com> (https://github.com/royNiladri)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/royNiladri/npm-module/issues"
+  },
+  "homepage": "https://github.com/royNiladri/npm-module#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.4",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^3.1.7",
+    "typescript": "^2.4.1"
+  }
+}

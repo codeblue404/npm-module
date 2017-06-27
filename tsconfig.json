@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "watch": true,
+        "outDir": "lib",
+        "declaration": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "files": [
+        "src/index.ts"
+    ],
+    "exclude": [
+        
+    ]
+}
