@@ -12,6 +12,6 @@ export class SayHelo{
     }
 
     speak(){
-        console.log(`Hello {this.util.getName()}`);
+        console.log(`Hello ${this.util.getName()}`);
     }
 }

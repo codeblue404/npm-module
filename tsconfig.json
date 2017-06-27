@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "watch": true,
+        /*"target": "es5",
+        "module": "es2015",
+        "watch": true,*/
         "outDir": "lib",
-        "declaration": true,
+        "declaration": true /*,
         "typeRoots": [
             "node_modules/@types"
-        ]
+        ]*/
     },
     "files": [
         "src/index.ts"
     ],
     "exclude": [
-        
+        "node_modules"
     ]
 }

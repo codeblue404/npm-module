@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/royNiladri/npm-module#readme",
   "devDependencies": {
-    "@types/node": "^8.0.4",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.1.7",
+    "ts-loader": "^2.2.0",
     "typescript": "^2.4.1"
   }
 }
