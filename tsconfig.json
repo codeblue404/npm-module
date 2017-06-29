@@ -1,18 +1,15 @@
 {
-    "compilerOptions": {
-        /*"target": "es5",
-        "module": "es2015",
-        "watch": true,*/
-        "outDir": "lib",
-        "declaration": true /*,
-        "typeRoots": [
-            "node_modules/@types"
-        ]*/
-    },
-    "files": [
-        "src/index.ts"
+  "compilerOptions": {
+    "target": "es5",
+    "declaration": true,
+    "noImplicitAny": false,
+    "outDir": "lib"
+  },
+    "include": [
+        "src/"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "**/*.spec.ts"
     ]
 }
