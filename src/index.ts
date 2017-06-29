@@ -8,10 +8,10 @@ export class SayHelo{
     }
     
     beDumb(){
-        console.log("---");
+        return "---";
     }
 
     speak(){
-        console.log(`Hello ${this.util.getName()}`);
+        return `Hello ${this.util.getName()}`;
     }
 }
