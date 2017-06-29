@@ -4,9 +4,10 @@ node_js:
 cache:
   directories:
   - node_modules
+before_script:
+  - npm install -g jasmine
+script: npm test
 deploy:
   provider: npm
   email: "callniladri.pro@gmail.com"
   api_key: "e854bb67-f17b-4db9-b025-376b3d3dccb8"
-  on:
-    tags: true
