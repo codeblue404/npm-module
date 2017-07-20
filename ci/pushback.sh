@@ -26,7 +26,7 @@ then
 fi
 
 git add -A .
-git commit -m "Push built resources: ${SHA}"
+git commit -m "Push built resources: ${SHA} [ci skip]"
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO
