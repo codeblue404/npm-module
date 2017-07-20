@@ -13,12 +13,13 @@ chmod 600 push_key
 eval `ssh-agent -s`
 ssh-add push_key
 
+git checkout ${TRAVIS_BRANCH}
 rm -rf lib/*
 tsc
 npm test
 
 status=$(git status --porcelain | tr '\n' ' ')
-if [ -z "${status}"]
+if [ -z "${status}" ]
 then
     echo "No changes to the output on this push; exiting."
     exit 0
