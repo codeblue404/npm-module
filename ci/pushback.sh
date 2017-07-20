@@ -13,7 +13,7 @@ chmod 600 push_key
 eval `ssh-agent -s`
 ssh-add push_key
 
-git checkout ${TRAVIS_BRANCH}
+#git checkout ${TRAVIS_BRANCH}
 rm -rf lib/*
 tsc
 npm test
@@ -29,4 +29,4 @@ git add -A .
 git commit -m "Push built resources: ${SHA} [ci skip]"
 
 # Now that we're all set up, we can push.
-git push $SSH_REPO
+git push $SSH_REPO HEAD:${TRAVIS_BRANCH}
