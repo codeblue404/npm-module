@@ -5,9 +5,18 @@ cache:
   directories:
   - node_modules
 before_script:
-  - npm install -g jasmine
-script: npm test
+- npm install -g jasmine
+script: bash ./ci/pushback.sh
 deploy:
   provider: npm
-  email: "callniladri.pro@gmail.com"
-  api_key: "e854bb67-f17b-4db9-b025-376b3d3dccb8"
+  email: callniladri.pro@gmail.com
+  api_key:
+    secure: rrI8LUzqhgccL5CeAioRe4Mvr17wJrukJOHtHD4maH2q9pqSq+zIWyfVEerlRbj1xauiH5EqwRHlfyKTqTVmAHhTZa5A4VtVo/pRxyRCP0QsUsjljzgznYnmQ++HSco2pQhdinkg9CGiuI98nDzkSPOe3hm+pLWfry42XVfkDD7tlbK4EdvuUA2elOD+gHhg0knNkmHM+vHWPuPFy426KfI+kGskuzpNonKnqN8E+0fu+9U59eBLzGlRRN532k7Gcfqk449diwKWr78MmOgf9akw0DcjznR82aSCs+43LVXzW5exBpr1IwMCAt560jWZYQz/ykSRkxKi3KbluzfonIS8A89vggO+GBShzqYS+2kHVq45UzINZJy/p3S+sJ9pXxRdeN9UEqk3l9Bqzv5KaeA8VcNzwDj22n9G2GAABywE1q2Jhel8GbpprsitJ05cloVOFv+894+YT4mL27htJ96R7s6I4G5StarxvgHu4AO8OJ/U+wrpCK+sju7sXqgUZbfbldDVR7LEnBynNZdBgpCj1JrQRgVOYoRzVri6qtTg/Xi+vTy+OGyRnhzwOjSxSSgeVZST2JH78jgBpnQDi9L0jgTjMsKVVNBbLiYHgKWhCtzaxo0z0q5ev7VDKi3Y18Agf1HvWkqLOxPqgLrDus6l145yB+9X+6R7j1d8DzQ=
+  on:
+    tags: true
+    branch: master
+  skip_cleanup: true
+before_install:
+- openssl aes-256-cbc -K $encrypted_5cf0bf141f15_key -iv $encrypted_5cf0bf141f15_iv
+  -in id_rsa.enc -out push_key -d
+

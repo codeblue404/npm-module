@@ -61,3 +61,5 @@ demo
 .travis.yml
 src
 tsconfig.json
+ci
+/*.enc
