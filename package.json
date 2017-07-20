@@ -1,6 +1,6 @@
 {
   "name": "npm-module-test-nil",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Setup a basic project to deploy a npm module. Typescript used for coding.",
   "main": "lib/index",
   "types": "lib/index",
