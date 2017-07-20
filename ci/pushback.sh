@@ -9,7 +9,7 @@ git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 git config --global push.default simple
 
-chmod 600 ../push_key
+chmod 600 push_key
 eval `ssh-agent -s`
 ssh-add push_key
 
